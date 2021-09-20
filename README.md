@@ -1,2 +1,2 @@
-# fake-news-classifier
-I have used an LSTM neural network on the fake news dataset from kaggle to create a fake news classifier model
+# sms spam classifier
+I have used an naive bayes model along with natural language processing to create this model
