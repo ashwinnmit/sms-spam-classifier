@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from imblearn.under_sampling import RandomUnderSampler
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import confusion_matrix , classification_report
-df = pd.read_csv('spam.csv' , sep = '\t' , names = ['labels','messages'])
+df = pd.read_csv('SMSSpamCollection' , sep = '\t' , names = ['labels','messages'])
 
 stemmer = PorterStemmer()
 bow = []
