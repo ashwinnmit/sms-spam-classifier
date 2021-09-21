@@ -16,7 +16,8 @@ for i in range(0, len(df)):
     new_sent = re.sub('[^a-zA-Z]','',df['messages'][i])
     new_sent = new_sent.lower()
     new_sent = new_sent.split()
-    new_sent = [stemmer.stem(word) for word in new_sent if new_sent not in set(stopwords.words('english'))]
+    new_sent = [stemmer.stem(word) for word in new_sent if word not in set(stopwords.words('english'))]
+    new_sent = ''.join(new_sent)
     bow.append(new_sent)
 
 bag_of_words = CountVectorizer(max_features=5000)
